@@ -109,7 +109,7 @@ Funktionen `main` är huvudfunktionen som körs för att starta äventyret. Den 
 ```python
 def main():
     current_page_id = 1
-    while current_page_id is not None:
+    while current_page_id is not None: 
       # logik för att hämta och visa sidan
 ```
 
