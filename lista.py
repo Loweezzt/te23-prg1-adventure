@@ -5,17 +5,24 @@ def find_item(item):
 inventory = ["Nycklar", "Smörkniv", "Ved"]
 
 index = find_item("Nycklar")
+
 item = inventory.pop(index)
 print(item)
+
 trade = "lite ved"
 print(f"Du byter {item} med en {trade}.")
+
 inventory.append(trade)
+
 def get_item(item_to_find):
-    iten_index = find_item(item_to_find)
+    item_index = find_item(item_to_find)
+    
     if item_index > 0:
-        return inventory.pop(iten_index)
+        return inventory.pop(item_index)
+    
     else:
-        print(F"{item_to_find}")
-        
+        print(F"{item_to_find} finns inte i inventory")
+        return None
+
 
 
